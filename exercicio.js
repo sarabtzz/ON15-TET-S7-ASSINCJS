@@ -7,23 +7,23 @@ e você pagará em 10x de R$390,00`
 
 // função que simula busca num banco que retorna o preço do produto:
 
-function buscarPreco(produto) {
+function buscarPreco = (produto, callback) =>  {
     setTimeout(() => {
       if (produto === "hormonios") {
-        return {
+        return callback(null, {
           nome: "Hormônios",
           preco: 99.00
-        }
-      } else if (produto === "unhas gel") {
-        return {
+        })
+      } else if (produto, callback === "unhas gel") {
+        return callback (null, {
           nome: "Unhas em Gel",
           preco: 190.00
-        }
-      } else if (produto === "lace"){
-        return {
+        })
+      } else if (produto, callback === "lace"){
+        return callback(null,  {
           nome: "Lace",
           preco: 3500.00
-        }
+        })
       } else {
         return "Produto não encontrado"
       }
