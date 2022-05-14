@@ -11,6 +11,7 @@
     3. A partir da id da usuária obter o histórico de pedidos;
 */
 
+<<<<<<< HEAD
 const pegarUsuaria = (callback) => {
   setTimeout(() => { //usado por se tratar de um processo assincrono, foi buscar no banco de dados
     return callback(null, {
@@ -78,3 +79,22 @@ const pegarUsuaria = (callback) => {
   //callback é uma função e pode receber argumentos, chamada no retorno da função
   //estrutura: callback(err(falha), retorno(certo))
       )})
+=======
+const pegarUsuaria = () => {
+  //Utilização do setTimeout para simular requisição externa
+  setTimeout(() => {
+    return {
+      nome: "Lucilania",
+      email: "luci@reprograma.com",
+      id: 981273981273
+    }
+  }, 1000)
+}
+
+const pegarEndereco = () => {}
+
+const pegarPedidos = () => {}
+
+const usuaria = pegarUsuaria()
+console.log('nome da usuária: ' + usuaria.nome)
+>>>>>>> aacb52469776d61b526a1640b3cfc0dabd32aeb2
